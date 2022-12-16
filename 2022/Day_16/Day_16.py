@@ -6,7 +6,25 @@
 """
 Valve_dic = {}
 FR_Valve_dic = {}
+# ==============================================================================
+def Rank_Data(Unranked_Data):
+    '''
+    Use:
+        Provides a list that ranks all values of a provided list
 
+    Inputs:
+        1. Unranked_Data    - Array of values to be ranked
+
+    Outputs:
+        1. Ranked_Data      - Array of corresponding ranks
+    '''
+    Ranked_Data = []
+    for Val in Unranked_Data:
+        Ranked_Data.append(sum(i < Val for i in Unranked_Data))
+
+    return Ranked_Data
+
+# ==============================================================================
 with open('Day_16_Input.txt', 'r') as inputs:
     Lines = inputs.readlines()
     
