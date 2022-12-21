@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 20 23:38:58 2022
-
-@author: mwidner
+    Created on Tue Dec 20 23:38:58 2022
+    
+    @author: MaxonIV
 """
 from sympy.solvers import solve
 from sympy import Symbol
